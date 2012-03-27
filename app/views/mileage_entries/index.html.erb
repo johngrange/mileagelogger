@@ -1,0 +1,31 @@
+<h1>Listing mileage_entries</h1>
+
+<table>
+  <tr>
+    <th>Litres</th>
+    <th>Tripmileage</th>
+    <th>Odometer</th>
+    <th>Cost</th>
+    <th>Mpg</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @mileage_entries.each do |mileage_entry| %>
+  <tr>
+    <td><%= mileage_entry.litres %></td>
+    <td><%= mileage_entry.tripMileage %></td>
+    <td><%= mileage_entry.odometer %></td>
+    <td><%= mileage_entry.cost %></td>
+    <td><%= mileage_entry.mpg %></td>
+    <td><%= link_to 'Show', mileage_entry %></td>
+    <td><%= link_to 'Edit', edit_mileage_entry_path(mileage_entry) %></td>
+    <td><%= link_to 'Destroy', mileage_entry, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Mileage entry', new_mileage_entry_path %>

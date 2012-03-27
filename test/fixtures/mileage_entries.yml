@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  litres: 9.99
+  tripMileage: 1
+  odometer: 1
+  cost: 9.99
+  mpg: 9.99
+
+two:
+  litres: 9.99
+  tripMileage: 1
+  odometer: 1
+  cost: 9.99
+  mpg: 9.99

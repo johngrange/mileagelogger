@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Litres:</b>
+  <%= @mileage_entry.litres %>
+</p>
+
+<p>
+  <b>Tripmileage:</b>
+  <%= @mileage_entry.tripMileage %>
+</p>
+
+<p>
+  <b>Odometer:</b>
+  <%= @mileage_entry.odometer %>
+</p>
+
+<p>
+  <b>Cost:</b>
+  <%= @mileage_entry.cost %>
+</p>
+
+<p>
+  <b>Mpg:</b>
+  <%= @mileage_entry.mpg %>
+</p>
+
+
+<%= link_to 'Edit', edit_mileage_entry_path(@mileage_entry) %> |
+<%= link_to 'Back', mileage_entries_path %>
