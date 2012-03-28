@@ -6,7 +6,7 @@
 </p>
 
 <p>
-  <b>Trip Mileage:</b>
+  <b>Tripmileage:</b>
   <%= @mileage_entry.tripMileage %>
 </p>
 

@@ -1,7 +1,7 @@
 class MileageEntry < ActiveRecord::Base
   comma do
     litres
-    tripMilage
+    tripMileage
     odometer
     cost
     mpg

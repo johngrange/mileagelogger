@@ -1,4 +1,4 @@
-<h1>Editing Mileage Entry</h1>
+<h1>Editing mileage_entry</h1>
 
 <%= render 'form' %>
 
