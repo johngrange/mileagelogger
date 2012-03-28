@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Mileagelogger</title>
+  <title>Mileage Logger</title>
   <%= stylesheet_link_tag    "application" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<p id="authLogPane">
+<%- if user_signed_in? %>
+  <%= link_to "Log out: " + current_user.email, destroy_user_session_path, :method => :delete %>
+<% end -%>
+<%- if !user_signed_in? %>
+<%= link_to "sign in with google", user_omniauth_authorize_path(:google) %>
+<% end -%>
 <%= yield %>
-
+</p>
 </body>
 </html>

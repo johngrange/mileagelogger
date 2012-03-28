@@ -1,4 +1,5 @@
 class MileageEntriesController < ApplicationController
+  before_filter :authenticate_user!
   # GET /mileage_entries
   # GET /mileage_entries.json
   def index

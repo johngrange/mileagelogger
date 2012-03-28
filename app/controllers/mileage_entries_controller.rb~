@@ -7,7 +7,7 @@ class MileageEntriesController < ApplicationController
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @mileage_entries }
-      # format.csv { render :csv => @mileage_entries }
+      format.csv { render :csv => @mileage_entries }
     end
   end
 

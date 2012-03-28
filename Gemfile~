@@ -24,7 +24,10 @@ end
 
 gem 'jquery-rails'
 gem 'comma'
-
+gem 'devise'
+gem 'mongrel', '1.2.0.pre2'
+# gem 'omniauth-google-oauth2'
+gem 'omniauth-openid'
 # Use unicorn as the web server
 # gem 'unicorn'
 
