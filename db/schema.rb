@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120328122108) do
+ActiveRecord::Schema.define(:version => 20120329180242) do
 
   create_table "mileage_entries", :force => true do |t|
     t.decimal  "litres"
@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(:version => 20120328122108) do
     t.decimal  "mpg"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "user_email"
   end
 
   create_table "users", :force => true do |t|
